@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- DreamHouse --></label>
+        <name>DreamHouse</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- External Orders --></label>
+        <name>External_Orders</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Garage --></label>
+        <name>Garage</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Lightning --></label>
+        <name>Sales_Only</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Trailblazer --></label>
+        <name>Trailblazer</name>
+    </customApplications>
+    <customLabels>
+        <label><!-- greeting --></label>
+        <name>greeting</name>
+    </customLabels>
+    <customTabs>
+        <label><!-- Command Center --></label>
+        <name>Command_Center</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Einstein Vision --></label>
+        <name>Einstein_Vision</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Heat Map --></label>
+        <name>Heat_Map</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Heat Map (Demo) --></label>
+        <name>Heat_Map_Mock</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- House Explorer --></label>
+        <name>House_Explorer</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- LDS --></label>
+        <name>LDS</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- List Races --></label>
+        <name>List_Races</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- MyData --></label>
+        <name>MyData</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Property Explorer --></label>
+        <name>Property_Explorer1</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Quickstart --></label>
+        <name>Quickstart</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- RaceTracker --></label>
+        <name>RaceTracker</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Data Import --></label>
+        <name>Sample_Data_Import</name>
+    </customTabs>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewCase --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewEvent --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewGroup --></label>
+        <name>NewGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewNote --></label>
+        <name>NewNote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewOpportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewTask --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Account --></label>
+        <name>New_Detailed_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Quick Contact --></label>
+        <name>Quick_Contact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Waypoint --></label>
+        <name>Waypoint</name>
+    </quickActions>
+</Translations>

@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="title" type="String" access="global" default="Race Tracker"></aura:attribute>
+	<ltng:require styles="/resource/SLDS202/assets/styles/salesforce-lightning-design-system-ltng.css" />
+    <div class="lightninglearn">
+        <div class="slds-page-header">
+        	<p class="slds-page-header__title" title="{!v.title}">
+                {!v.title}
+            </p>
+        </div>
+    </div>
+</aura:component>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Race</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Races</value>
+    </caseValues>
+    <fields>
+        <label><!-- Attended --></label>
+        <name>Attended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Time --></label>
+        <name>Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Race Type --></label>
+        <name>Race_Type__c</name>
+        <picklistValues>
+            <masterLabel>10K</masterLabel>
+            <translation><!-- 10K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5K</masterLabel>
+            <translation><!-- 5K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>half marathon</masterLabel>
+            <translation><!-- half marathon --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Results --></label>
+        <name>Results__c</name>
+    </fields>
+    <layouts>
+        <layout>Race Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

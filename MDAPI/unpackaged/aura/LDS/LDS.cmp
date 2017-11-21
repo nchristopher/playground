@@ -1,0 +1,71 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" controller="LDSController">
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <aura:attribute name="accountname" type="string" />
+    <aura:attribute name="parentid" type="id" />
+    <aura:attribute name="isVisible" type="boolean" />
+    <aura:attribute name="isVisibleFile" type="boolean" />
+    <aura:attribute name="acc" type="Account" default="{'sobjectType': 'Account', 'Name': '','Id': ''}" />
+    <aura:attribute name="Acchits" type="Account[]" />
+    <!--ui:inputText label="Account" value="{!v.accountname}" change="{!c.handleChange}" /-->
+    <input type="text" id="searchString" class="slds-input slds-combobox__input" value="{!v.accountname}" updateOn="keyup" oninput="{!c.handleInput}" aria-autocomplete="list" aria-controls="listbox-unique-id" autocomplete="off" role="textbox" placeholder="Search Salesforce" />
+    <aura:attribute name="SelectedStuff" type="string[]" />
+    <aura:if isTrue="{!v.isVisibleFile}">
+        <div class="slds-scrollable slds-grow">
+            <table role="grid" class="slds-table slds-table--fixed-layout slds-table--bordered slds-table--resizable-cols slds-no-row-hover slds-scrollable--none">
+                <thead>
+                    <tr class="slds-line-height--reset">
+                        <th scope="col" style="width:3.75rem;"></th>
+                        <th aria-label="Id" class="slds-is-sortable slds-is-resizable slds-text-title--caps" scope="col">
+                            <a href="javascript:void(0);" class="slds-th__action slds-text-link--reset" tabindex="-1"> <span class="slds-assistive-text">Sort </span>
+                                <span class="slds-truncate" title="Id">ID</span>
+                                <div class="slds-icon_container">
+                                    <c:svg class="slds-icon slds-icon--x-small slds-icon-text-default slds-is-sortable__icon"  xlinkHref="{!$Resource.LDS + '/assets/icons/utility-sprite/svg/symbols.svg#arrowdown'}" />
+                                </div>
+                                <span class="slds-assistive-text" aria-live="assertive" aria-atomic="true"></span> </a>
+                            <div class="slds-resizable">
+                                <label for="cell-resize-handle-741" class="slds-assistive-text">ID</label>
+                                <input type="range" min="20" max="1000" class="slds-resizable__input slds-assistive-text" id="cell-resize-handle-741" tabindex="-1" /> <span class="slds-resizable__handle"> 
+                    <span class="slds-resizable__divider"></span> </span>
+                            </div>
+                        </th>
+                        <th aria-label="Account Name" class="slds-is-sortable slds-is-resizable slds-text-title--caps" scope="col">
+                            <a href="javascript:void(0);" class="slds-th__action slds-text-link--reset" tabindex="-1"> <span class="slds-assistive-text">Sort </span>
+                                <span class="slds-truncate" title="Account Name">Account Name</span>
+                                <div class="slds-icon_container">
+                                    <c:svg class="slds-icon slds-icon--x-small slds-icon-text-default slds-is-sortable__icon"  xlinkHref="{!$Resource.LDS + '/assets/icons/utility-sprite/svg/symbols.svg#arrowdown'}" />
+                                </div>
+                                <span class="slds-assistive-text" aria-live="assertive" aria-atomic="true"></span> </a>
+                            <div class="slds-resizable">
+                                <label for="cell-resize-handle-742" class="slds-assistive-text">Account Name column width</label>
+                                <input type="range" min="20" max="1000" class="slds-resizable__input slds-assistive-text" id="cell-resize-handle-742" tabindex="-1" /> <span class="slds-resizable__handle"> 
+                    <span class="slds-resizable__divider"></span> </span>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <aura:iteration var="lx" items="{!v.Acchits}">
+                        <tr class="slds-hint-parent">
+                            <td role="gridcell" tabindex="0" class="slds-text-align--right" style="width:3.75rem;">
+                                <div class="slds-checkbox--add-button">
+                                    <input type="checkbox" class="slds-assistive-text" id="{!lx.Id}" tabindex="-1" onclick="{!c.setSelected}" />
+                                    <label for="{!lx.Id}" class="slds-checkbox--faux">
+                                        <span class="slds-assistive-text">Select item 1</span> </label>
+                                </div>
+                            </td>
+                            <th scope="row">
+                                <div class="slds-truncate" title="{!lx.Id}">{!lx.Id}</div>
+                            </th>
+                            <td role="gridcell">
+                                <div class="slds-truncate" title="{!lx.Name}">{!lx.Name}</div>
+                            </td>
+                        </tr>
+                    </aura:iteration>
+                </tbody>
+            </table>
+        </div>
+        <div class="slds-no-flex">
+            <button class="slds-button slds-button--neutral" onclick="{!c.connectToEvent}">Connect To ER</button>
+        </div>
+    </aura:if>
+</aura:component>

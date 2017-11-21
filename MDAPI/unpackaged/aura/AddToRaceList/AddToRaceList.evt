@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION" description="Event template" >
+    <aura:attribute name="race" type="Race__c">
+	</aura:attribute>
+</aura:event>

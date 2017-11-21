@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Equipment --></label>
+    <lookupFilter>
+        <errorMessage><!-- No spare parts meet this description or name. --></errorMessage>
+    </lookupFilter>
+    <name>Equipment__c</name>
+    <relationshipLabel><!-- Work Parts --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Race Type --></label>
+    <name>Race_Type__c</name>
+    <picklistValues>
+        <masterLabel>10K</masterLabel>
+        <translation><!-- 10K --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5K</masterLabel>
+        <translation><!-- 5K --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>half marathon</masterLabel>
+        <translation><!-- half marathon --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
